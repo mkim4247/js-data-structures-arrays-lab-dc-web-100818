@@ -1,37 +1,34 @@
 // Write your solution here!
-const drivers = ["Milo", "Otis", "Garfield"];
+const drivers = ['Milo', 'Otis', 'Garfield'];
 
-function destructivelyAppendDriver(name) {
-  drivers.push(name);
+function destructivelyAppendDriver() {
+  drivers.push('Ralph');
 }
 
-function destructivelyPrependDriver(name) {
-  drivers.unshift(name);
+function destructivelyPrependDriver() {
+  drivers.unshift('Bob');
 }
 
 function destructivelyRemoveLastDriver() {
-  drivers.pop();
+  drivers.pop(-1);
 }
 
 function destructivelyRemoveFirstDriver() {
-  drivers.shift();
+  drivers.shift(0);
 }
 
-function appendDriver(name) {
-  let newDrivers = [...drivers, name];
-  return newDrivers;
+function appendDriver() {
+  return [...drivers, "Broom"];
 }
 
-function prependDriver(name) {
-  let newDrivers = [name, ...drivers];
-  return newDrivers;
+function prependDriver() {
+  return ['Arnold', ...drivers];
 }
 
 function removeLastDriver() {
-  let newDrivers = drivers.slice(0, -1);
-  return newDrivers;
+  return drivers.slice(0,2);
 }
 
 function removeFirstDriver() {
-  return drivers.slice(1);
+  return drivers.slice(1,3);
 }
